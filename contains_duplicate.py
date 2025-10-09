@@ -4,5 +4,5 @@ class Solution(object):
         :type nums: List[int]
         :rtype: bool
         """
-        # Return whether there is duplicates in @nums or not
-        return len([num for num in set(nums) if nums.count(num) > 1]) > 0
+        # Return @True if there is a difference in length between @nums list and set, otherwise @False
+        return len(nums) - len(set(nums)) > 0
